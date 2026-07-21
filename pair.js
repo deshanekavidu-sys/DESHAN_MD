@@ -620,9 +620,4 @@ async function setupStatusHandlers(socket) {
 
 async function resize(image, width, height) {
     let oyy = await Jimp.read(image);
-    let kiyomasa = await oyy.resize(width, height).getBufferAsync(Jimp.MIME_JPEG);
-    return kiyomasa;
-}
-
-function capital(string) {
-    return string.charAt(0).toU
+    let kiyomasa = await oyy.resize(width, height).getBufferAsync(Jimp.MIME_JPE
