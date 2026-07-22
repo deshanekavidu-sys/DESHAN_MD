@@ -115,10 +115,10 @@ const Session = mongoose.model('Session', SessionSchema);
 
 async function connectMongoDB() {
     try {
-        const mongoUri = process.env.MONGO_URI || 'mongodb+srv://deshanekavidu_db_user:CkR6Kb6TKDpBH67k@cluster0.lxli0pf.mongodb.net/?appName=Cluster0';
+        const mongoUri = process.env.MONGODB_URI || 'mongodb+srv://deshanekavidu_db_user:CkR6Kb6TKDpBH67k@cluster0.lxli0pf.mongodb.net/?appName=Cluster0';
         await mongoose.connect(mongoUri, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
+            bufferCommands: false,
+            serverSelectionTimeoutMS: 5000
         });
         console.log('Connected to MongoDB');
     } catch (error) {
