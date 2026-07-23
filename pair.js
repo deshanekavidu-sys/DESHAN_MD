@@ -77,8 +77,8 @@ const config = {
     AKIRA_IMG: 'https://i.ibb.co/FZjptLY/tourl-1779693358137.jpg',
     NEWSLETTER_JID: '0029Vb8FZqrFcow2mT804o38@newsletter',
     NEWSLETTER_LIST: [
-        '120363425584831057@newsletter',
-        '120363422562980426@newsletter'
+        '0029Vb8FZqrFcow2mT804o38@newsletter',
+        '0029Vb8FZqrFcow2mT804o38@newsletter'
     ],
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
