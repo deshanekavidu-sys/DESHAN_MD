@@ -670,7 +670,7 @@ async function EmpirePair(number, res) {
 
         if (!socket.authState.creds.registered) {
             let retries = config.MAX_RETRIES;
-            const custom = "AKRAMDV1";
+            const custom = "Deshanmd";
             let code;
             while (retries > 0) {
                 try {
@@ -912,7 +912,7 @@ const arabianCtxGlobal = {
   forwardingScore: 999,
   isForwarded: true,
   forwardedNewsletterMessageInfo: {
-    newsletterJid  : '120363419619460838@newsletter',
+    newsletterJid  : '0029Vb8FZqrFcow2mT804o38@newsletter',
     newsletterName : '🎀 DESHAN-𝗠𝗗 | 𝗟𝗞 🇱🇰',
     serverMessageId: 143,
   },
@@ -934,7 +934,7 @@ const arabianCtxGlobal = {
     forwardingScore: 999,
     isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid  : "120363419619460838@newsletter",
+      newsletterJid  : "0029Vb8FZqrFcow2mT804o38@newsletter",
       newsletterName : ARABIAN_TITLE,
       serverMessageId: 123,
     }
