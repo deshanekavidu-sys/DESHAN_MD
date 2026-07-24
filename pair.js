@@ -983,134 +983,77 @@ const downloadQuotedMedia = async (quoted) => {
 
       await socket.sendMessage(sender, {
         image: { url: akira },
-        caption: `*↳ ❝ [🎀 DESHAN MD 𝗠𝗲𝗻𝘂 🎀] ¡! if(command === '.menu'){
-    let caption = `*🌟 𝙃𝙚𝙮 ❟ ${pushname} ✨*
-        
-*╭─「 𝘿𝙀𝙎𝙃𝘼𝙉 𝙈𝘿 𝘾𝙊𝙈𝘼𝙉𝘿 𝙋𝘼𝙉𝙀𝙇 」*
-*┃ \`◈ ${greeting}🚀\`*
-*┃ \`◈ 𝚃𝚒𝚖𝚎\` : ${slTimeNow}*
-*┃ \`◈ 𝙳𝚊𝚝𝚎\` : ${slDate}*
-*┃ \`◈ 𝙱𝚘𝚝 𝙽𝚊𝚖𝚎:\` 𝘿𝙀𝙎𝙃𝘼𝙉 𝙈𝘿*
-*┃ \`◈ 𝙿𝚕𝚊𝚝𝚏𝚘𝚛𝚖:\` Linux*
-*╰──────────●►*    
-*☱ 🔢 𝗥𝗲𝗽𝗹𝘆 𝗪𝗶𝘁𝗵 𝗡𝘂𝗺𝗯𝗲𝗿 ☱*
+        caption: `*↳ ❝ [🎀 DESHAN MD 𝗠𝗲𝗻𝘂 🎀] ¡! caption: `*↳ ❝ [🎀 DESHAN MD 𝗠𝗲𝗻𝘂 🎀] ¡! ❞*
 
-*1║❯ 🔍 𝚂𝙴𝙰𝚁𝙲𝙷 𝙼𝙴𝙽𝚄*
-*2║❯ ⬇️ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙴𝙽𝚄*
-*3║❯❯ 🛠️ 𝚃𝙾𝙻𝚂 𝙼𝙴𝙽𝚄*
-*4║❯ 👥 𝙶𝚁𝙾𝚄𝙿 𝙼𝙴𝙽𝚄*
-*5║❯ 🤖 𝙰𝙸 𝙼𝙴𝙽𝚄*
-*6║❯ 🎭 𝙵𝚄𝙽 𝙼𝙴𝙽𝚄*
-*7║❯ 📜 𝙰𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝚂 (50)*
+┏━━━━━°⌜ \`赤い糸\` ⌟°━━━━━┓
+┃👤 *𝚄𝚂𝙴𝚁* : ${pushname}
+┃📦 *𝚅𝙴𝚁𝚂𝙸𝙾𝙽* : V1
+┃📅 *𝙳𝙰𝚃𝙴* : ${slDate}
+┃⌚ *𝚃𝙸𝙼𝙴* : ${slTimeNow}
+┗━━━━━°⌜ \`赤い糸\` ⌟°━━━━━┛
 
-> *𝘿𝙀𝙎𝙃𝘼𝙉 𝙈𝘿 𝘽𝙤𝙩 v1.0*
-> _Crafted by Deshan_ ❤️`
+${readMore}
+╭─⊹₊⟡⋆『 \`𝐌𝐚𝐢𝐧 𝐂𝐦𝐝𝐳\` 』𖤐.ᐟ
+│₊❏❜ ⋮ •menu ➜ ɢᴇᴛ ᴄᴍᴅ ʟɪꜱᴛ
+│₊❏❜ ⋮ •system ➜ ɢᴇᴛ ꜱʏꜱᴛᴇᴍ ɪɴꜰᴏ
+│₊❏❜ ⋮ •ping ➜ ɢᴇᴛ ʙᴏᴛ ꜱᴘᴇᴇᴅ
+│₊❏❜ ⋮ •alive ➜ ᴄʜᴇᴄᴋ ʙᴏᴛ ᴀʟɪᴠᴇ
+│₊❏❜ ⋮ •owner ➜ ɢᴇᴛ ᴏᴡɴᴇʀ ɪɴꜰᴏ
+╰──────────────────<𝟑 .ᐟ
+${readMore}
+╭─⊹₊⟡⋆『 \`𝐃𝐰𝐧 𝐂𝐦𝐝𝐳\` 』𖤐.ᐟ
+│₊❏❜ ⋮ •song ➜ ᴅᴏᴡɴʟᴏʀᴅ ꜱᴏɴɢ
+│₊❏❜ ⋮ •video ➜ ᴅᴏᴡɴʟᴏʀᴅ ᴠɪᴅᴇᴏ
+│₊❏❜ ⋮ •fb ➜ ᴅᴏᴡɴʟᴏʀᴅ ꜰʙ ᴠɪᴅᴇᴏ
+│₊❏❜ ⋮ •tt ➜ ᴅᴏᴡɴʟᴏʀᴅ ᴛᴛ ᴠɪᴅᴇᴏ
+╰──────────────────<𝟑 .ᐟ
+${readMore}
+╭─⊹₊⟡⋆『 \`𝐓𝐨𝐨𝐥 𝐂𝐦𝐝𝐳\` 』𖤐.ᐟ
+│₊❏❜ ⋮ •vv ➜ ᴅᴇᴄʀʏᴘᴛ ᴏɴᴇ ᴛɪᴍᴇ ꜰɪʟᴇ
+│₊❏❜ ⋮ •sticker ➜ ᴄᴏɴᴠᴇᴛʀ ᴛᴏ ꜱᴛᴋ
+│₊❏❜ ⋮ •fancy ➜ ᴄᴏɴᴠᴇᴛ ᴛᴏ ꜰᴀɴᴄʏ ᴛᴇxᴛ
+│₊❏❜ ⋮ •getdp ➜ ɢᴇᴛ ᴡʜ ᴘʀᴏꜰɪʟᴇ 4ᴛᴏ
+│₊❏❜ ⋮ •npm ➜ ꜱᴇᴀʀᴄʜ ɴᴘᴍ ᴘᴋɢꜱ
+│₊❏❜ ⋮ •img ➜ ꜱᴇᴀʀᴄʜ ɪᴍɢꜱ
+│₊❏❜ ⋮ •mode ➜ ᴄʜᴀɴɢᴇ ʙᴏᴛ ᴍᴏᴅᴇ
+╰──────────────────<𝟑 .ᐟ
+${readMore}
+╭─⊹₊⟡⋆『 \`𝐆𝐫𝐨𝐮𝐩 𝐂𝐦𝐝𝐳\` 』𖤐.ᐟ
+│₊❏❜ ⋮ •tagall ➜ ᴛᴀɢᴀʟʟ ᴍᴇᴍʙᴇʀꜱ
+│₊❏❜ ⋮ •hidetag ➜ ᴛᴀɢᴀʟʟ ᴍᴇᴍ ꜱɪʟᴇɴᴛʟʏ
+│₊❏❜ ⋮ •add ➜ ᴀᴅᴅ ᴍᴇᴍʙᴇʀ
+│₊❏❜ ⋮ •kick ➜ ᴋɪᴄᴋ ᴍᴇᴍʙᴇʀ
+│₊❏❜ ⋮ •tagadmin ➜ ᴛᴀɢ ᴀʟʟ ᴀᴅᴍɪɴꜱ
+│₊❏❜ ⋮ •promote ➜ ᴍᴀᴋᴇ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ
+│₊❏❜ ⋮ •demote ➜ ᴅɪꜱᴍɪꜱꜱ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ
+│₊❏❜ ⋮ •lockgroup ➜ ʟᴏᴄᴋ ᴛʜᴇ ɢʀᴏᴜᴘ
+│₊❏❜ ⋮ •unlockgroup ➜ ᴜɴʟᴏᴄᴋ ᴛʜᴇ ɢʀᴏᴜᴘ
+│₊❏❜ ⋮ •mute ➜ ᴍᴜᴛᴇ ᴛʜᴇ ɢʀᴏᴜᴘ
+│₊❏❜ ⋮ •unmute ➜ ᴜɴᴍᴜᴛᴇ ᴛʜᴇ ɢʀᴏᴜᴘ
+│₊❏❜ ⋮ •setname ➜ ꜱᴇᴛ ɢʀᴏᴜᴘ ɴᴀᴍᴇ
+│₊❏❜ ⋮ •setdesc ➜ ꜱᴇᴛ ɢʀᴏᴜᴘ ᴅᴇꜱᴄ
+│₊❏❜ ⋮ •seticon ➜ ꜱᴇᴛ ɢʀᴏᴜᴘ ɪᴄᴏɴ
+│₊❏❜ ⋮ •linkgroup ➜ ɢᴇᴛ ɢʀᴏᴜᴘ ʟɪɴᴋ
+│₊❏❜ ⋮ •revokelink ➜ ʀꜱᴇᴛ ɢʀᴏᴜᴘ ʟɪɴᴋ
+│₊❏❜ ⋮ •leave ➜ ʟᴇᴀᴠᴇ ᴛʜᴇ ɢʀᴏᴜᴘ
+╰──────────────────<𝟑 .ᐟ
+${readMore}
+╭─⊹₊⟡⋆『 \`𝐀𝐈 𝐂𝐦𝐝𝐳\` 』𖤐.ᐟ
+│₊❏❜ ⋮ •akira ➜ ᴀᴋɪʀᴀ ᴀɪ ɢɪʀʟꜰʀɪᴇɴᴅ
+╰──────────────────<𝟑 .ᐟ
+${readMore}
+╭─⊹₊⟡⋆『 \`𝐅𝐮𝐧 𝐂𝐦𝐝𝐳\` 』𖤐.ᐟ
+│₊❏❜ ⋮ •lvcal ➜ ʟᴏᴠᴇ ᴄᴀʟᴄᴜʟᴀᴛᴇʀ
+│₊❏❜ ⋮ •hentai ➜ ɢᴇᴛ ʜᴇɴᴛᴀɪ ᴠɪᴅᴇᴏ(18+)
+│₊❏❜ ⋮ •hack ➜ ꜱᴇɴᴅ ʜᴀᴄᴋɪɴɢ ᴍꜱɢ
+╰──────────────────<𝟑 .ᐟ
 
-    await sock.sendMessage(from, { text: caption }, { quoted: msg });
-}
+> *𝗔esthatic  𝗕y DESHAN 𝜗𝜚⋆*`,
+        contextInfo: arabianCtx()
+      }, { quoted: msg });
 
-// ========== NUMBER BUTTON SYSTEM ==========
-if(command === '1'){
-    let txt = `*🔍 𝚂𝙴𝙰𝚁𝙲𝙷 𝙼𝙴𝙽𝚄*
-
-*1* .ytsearch ➜ 𝚂𝚎𝚊𝚛𝚌𝚑 𝚈𝚃
-*2* .google ➜ 𝙶𝚘𝚐𝚕𝚎 𝚂𝚎𝚊𝚛𝚌𝚑
-*3* .img ➜ 𝙸𝚖𝚊𝚐𝚎 𝚂𝚎𝚊𝚛𝚌𝚑
-*4* .pinterest ➜ 𝙿𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝
-*5* .lyrics ➜ 𝚂𝚘𝚗𝚐 𝙻𝚢𝚛𝚒𝚌𝚜
-*6* .weather ➜ 𝚆𝚎𝚊𝚝𝚑𝚎𝚛 𝙸𝚗𝚏𝚘
-*7* .news ➜ 𝙻𝚊𝚝𝚎𝚜𝚝 𝙽𝚎𝚠𝚜
-*8* .wiki ➜ 𝚆𝚒𝚔𝚒𝚙𝚎𝚍𝚒𝚊
-
-> 𝘽𝙖𝙘𝙠 > .menu`
-    await sock.sendMessage(from, { text: txt }, { quoted: msg });
-}
-
-if(command === '2'){
-    let txt = `*⬇️ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙴𝙽𝚄*
-
-*1* .yt ➜ 𝚈𝚃 𝚅𝚒𝚍𝚎𝚘
-*2* .ytmp3 ➜ 𝚈𝚃 𝙰𝚞𝚍𝚒𝚘
-*3* .fb ➜ 𝙵𝚋 𝚅𝚒𝚍𝚎𝚘
-*4* .tt ➜ 𝚃𝚒𝚔𝚝𝚘𝚔
-*5* .ig ➜ 𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖
-*6* .twitter ➜ 𝚃𝚠𝚒𝚝𝚎𝚛
-*7* .mediafire ➜ 𝙼𝚎𝚍𝚒𝚊𝚏𝚒𝚛𝚎
-*8* .gdrive ➜ 𝙶𝚘𝚐𝚕𝚎 𝙳𝚛𝚒𝚟𝚎
-
-> 𝘽𝙖𝙘𝙠 > .menu`
-    await sock.sendMessage(from, { text: txt }, { quoted: msg });
-}
-
-if(command === '3'){
-    let txt = `*🛠️ 𝚃𝙾𝙻𝚂 𝙼𝙴𝙽𝚄*
-
-*1* .sticker ➜ 𝙸𝚖𝚐 > 𝚂𝚝𝚒𝚌𝚔𝚎𝚛
-*2* .vv ➜ 𝚅𝚒𝚎𝚠𝙾𝚗𝚌𝚎 𝙳𝚎𝚌𝚛𝚢𝚙𝚝
-*3* .tourl ➜ 𝚄𝚙𝚕𝚘𝚊𝚍 𝚃𝚘 𝚄𝚛𝚕
-*4* .hd ➜ 𝙷𝙳 𝙸𝚖𝚊𝚐𝚎
-*5* .removebg ➜ 𝚁𝚎𝚖𝚘𝚟𝚎 𝙱𝚐
-*6* .fancy ➜ 𝙵𝚊𝚗𝚌𝚢 𝚃𝚎𝚡𝚝
-*7* .getdp ➜ 𝙶𝚎𝚝 𝙿𝚛𝚘𝚏𝚒𝚕𝚎 𝙿𝚒𝚌
-*8* .qrcode ➜ 𝙼𝚊𝚔𝚎 𝚀𝚛
-*9* .translate ➜ 𝚃𝚛𝚊𝚗𝚜𝚕𝚊𝚝𝚎
-*10* .calc ➜ 𝙲𝚊𝚕𝚌𝚞𝚕𝚊𝚝𝚘𝚛
-
-> 𝘽𝙖𝙘𝙠 > .menu`
-    await sock.sendMessage(from, { text: txt }, { quoted: msg });
-}
-
-if(command === '4'){
-    let txt = `*👥 𝙶𝚁𝙾𝚄𝙿 𝙼𝙴𝙽𝚄*
-
-*1* .tagall ➜ 𝚃𝚊𝚐 𝙰𝚕
-*2* .hidetag ➜ 𝚂𝚒𝚕𝚎𝚗𝚝 𝚃𝚊𝚐
-*3* .kick ➜ 𝙺𝚒𝚌𝚔 𝙼𝚎𝚖
-*4* .add ➜ 𝙰𝚍 𝙼𝚎𝚖
-*5* .promote ➜ 𝙼𝚊𝚔𝚎 𝙰𝚍𝚖𝚒𝚗
-*6* .demote ➜ 𝚁𝚎𝚖𝚘𝚟𝚎 𝙰𝚍𝚖𝚒𝚗
-*7* .mute ➜ 𝙼𝚞𝚝𝚎 𝙶𝚛𝚘𝚞𝚙
-*8* .unmute ➜ 𝚄𝚗𝚖𝚞𝚝𝚎 𝙶𝚛𝚘𝚞𝚙
-*9* .link ➜ 𝙶𝚛𝚘𝚞𝚙 𝙻𝚒𝚗𝚔
-*10* .leave ➜ 𝙻𝚎𝚊𝚟𝚎 𝙶𝚛𝚘𝚞𝚙
-
-> 𝘽𝙖𝙘𝙠 > .menu`
-    await sock.sendMessage(from, { text: txt }, { quoted: msg });
-}
-
-if(command === '5'){
-    let txt = `*🤖 𝙰𝙸 𝙼𝙴𝙽𝚄*
-
-*1* .ai ➜ 𝙲𝚑𝚊𝚝 𝚠𝚒𝚝𝚑 𝙰𝙸
-*2* .chatgpt ➜ 𝙶𝙿𝚃 𝙲𝚑𝚊𝚝
-*3* .gemini ➜ 𝙶𝚘𝚘𝚐𝚕𝚎 𝙶𝚎𝚖𝚒𝚗𝚒
-*4* .imagine ➜ 𝙰𝙸 𝙸𝚖𝚊𝚐𝚎
-*5* .ask ➜ 𝙰𝚜𝚔 𝙰𝚗𝚢𝚝𝚑𝚒𝚗𝚐
-*6* .remix ➜ 𝚁𝚎𝚖𝚒𝚡 𝙸𝚖𝚐
-*7* .brain ➜ 𝙰𝙸 𝙱𝚛𝚊𝚒𝚗
-
-> 𝘽𝙖𝙘𝙠 > .menu`
-    await sock.sendMessage(from, { text: txt }, { quoted: msg });
-}
-
-if(command === '6'){
-    let txt = `*🎭 𝙵𝚄𝙽 𝙼𝙴𝙽𝚄*
-
-*1* .joke ➜ 𝚁𝚊𝚗𝚍𝚘𝚖 𝙹𝚘𝚔𝚎
-*2* .quote ➜ 𝙼𝚘𝚝𝚒𝚟𝚊𝚝𝚒𝚘𝚗
-*3* .meme ➜ 𝚁𝚊𝚗𝚍𝚘𝚖 𝙼𝚎𝚖𝚎
-*4* .ship ➜ 𝚂𝚑𝚒𝚙 𝙲𝚊𝚕𝚌
-*5* .lvcal ➜ 𝙻𝚘𝚟𝚎 𝙲𝚊𝚕𝚌
-*6* .troll ➜ 𝚃𝚛𝚘𝚕 𝙼𝚜𝚐
-*7* .hack ➜ 𝙵𝚊𝚔𝚎 𝙷𝚊𝚌𝚔
-
-> 𝘽𝙖𝙘𝙠 > .menu`
-    await sock.sendMessage(from, { text: txt }, { quoted: msg });
-}
-
-if(command === '7'){
-    await sock.sendMessage(from, { text: `*📜 𝙰𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝚂 (50)*\n\nTotal 50 Commands available\nType number to see category` }, { quoted: msg });
-}
+      break;
+                }
     // ════════════ PING ════════════
 
     case 'ping': {
