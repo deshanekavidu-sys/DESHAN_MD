@@ -927,7 +927,7 @@ const arabianCtxGlobal = {
 };
 
   // ── Arabian mystery header ──────────────────────────────────────────────────
-  const ARABIAN_TITLE = '🦋 ₊˚ ⊹ DESHAN  𝐌 𝐃 ⊹ ˚₊ 𝜗𝜚';
+  const ARABIAN_TITLE = '💓 ₊˚ ⊹ DESHAN  𝐌 𝐃 ⊹ ˚₊ 𝜗𝜚';
   const ARABIAN_SUB   = '𝐀𝐞𝐬𝐭𝐡𝐚𝐭𝐢𝐜 𝐁𝐨𝐭 𝐐𝐮𝐞𝐞𝐧 💘';
 
   const arabianCtx = () => ({
@@ -1201,7 +1201,7 @@ case 'yta': {
         try { await socket.sendMessage(sender, { react: { text: '📥', key: msg.key } }); } catch (_) {}
 
         // Send Details Caption
-        const captionMsg = `✨ *_🦋 ₊˚ ⊹ D E S H A N - 𝐌 D ⊹ ˚₊ 𝜗𝜚_ Music System* ✨\n\n📌 *Title:* ${songTitle}\n💿 *Quality:* 320kbps Ultra-High Quality\n🚀 *Status:* downloading...`;
+        const captionMsg = `✨ *_ ₊˚ ⊹ D E S H A N - 𝐌 D ⊹ ˚₊ 𝜗𝜚_ Music System* ✨\n\n📌 *Title:* ${songTitle}\n💿 *Quality:* 320kbps Ultra-High Quality\n🚀 *Status:* downloading...`;
         await reply(captionMsg);
 
         // 3. Send Audio File
