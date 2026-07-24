@@ -1183,7 +1183,7 @@ case 'yta': {
         }
 
         // 2. Download 320kbps MP3
-        reply("📥 _*🦋 ₊˚ ⊹ 𝐒 𝐀 𝐃 𝐄 𝐖 - 𝐌 𝐈 𝐍 𝐈 ⊹ ˚₊ 𝜗𝜚*_ Extracting 320kbps High-Quality MP3..._");
+        reply("📥 _*🎧 ₊˚ ⊹ D E S H A N - 𝐌 D ⊹ ˚₊ 𝜗𝜚*_ Extracting 320kbps High-Quality MP3..._");
 
         let audioDownloadUrl = null;
         const dlRes = await axios.get(`${YT_DOWNLOAD_API}?url=${encodeURIComponent(youtubeUrl)}&quality=320&apitoken=${API_TOKEN}`);
@@ -1201,7 +1201,7 @@ case 'yta': {
         try { await socket.sendMessage(sender, { react: { text: '📥', key: msg.key } }); } catch (_) {}
 
         // Send Details Caption
-        const captionMsg = `✨ *_🦋 ₊˚ ⊹ 𝐒 𝐀 𝐃 𝐄 𝐖 - 𝐌 𝐈 𝐍 𝐈 ⊹ ˚₊ 𝜗𝜚_ Music System* ✨\n\n📌 *Title:* ${songTitle}\n💿 *Quality:* 320kbps Ultra-High Quality\n🚀 *Status:* downloading...`;
+        const captionMsg = `✨ *_🦋 ₊˚ ⊹ D E S H A N - 𝐌 D ⊹ ˚₊ 𝜗𝜚_ Music System* ✨\n\n📌 *Title:* ${songTitle}\n💿 *Quality:* 320kbps Ultra-High Quality\n🚀 *Status:* downloading...`;
         await reply(captionMsg);
 
         // 3. Send Audio File
