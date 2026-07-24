@@ -1144,54 +1144,48 @@ case 'song':
 case 'ytmp3': {
     try {
         const query = args.join(' ');
-        if (!query) return reply("🎵 *Plz Send Me A Song Name !*");
+        if (!query) return reply("🎵 *Plz Send Me A Song Name!*");
 
-        try { await socket.sendMessage(sender, { react: { text: '🔎', key: msg.key } }); } catch (_) {}
+        await socket.sendMessage(sender, { react: { text: '🔎', key: msg.key } }).catch(()=>{});
 
         const search = await yts(query);
-        const video = search.videos[0]; 
-
-        if (!video) return reply("❌ *I Cant Find It !*");
+        const video = search.videos[0];
+        if (!video) return reply("❌ *I Cant Find It!*");
 
         const slDate = moment().tz('Asia/Colombo').format('YYYY-MM-DD');
         const slTimeNow = moment().tz('Asia/Colombo').format('HH:mm:ss');
 
-        const caption = `*↳ ❝ [🎀 DESHAN  MD 𝗩𝗶𝗱𝗲𝗼 🎀] ¡! ❞*\n\n` +
+        const caption = `*↳ ❝ [🎀 DESHAN MD 𝗦𝗢𝗡𝗚 🎀] ❞*\n\n` +
                         `> *\`🎵 𝚃𝙸𝚃𝙻𝙴 :\`* ${video.title}\n` +
-                        `> *\`👤 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 :\`* ${video.author.name}\n` +
+                        `> *\`👤 𝙲𝙷𝙰𝙽𝙴𝙻 :\`* ${video.author.name}\n` +
                         `> *\`⏱️ 𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 :\`* ${video.timestamp}\n` +
                         `> *\`👀 𝚅𝙸𝙴𝚆𝚂 :\`* ${video.views.toLocaleString()}\n` +
                         `> *\`📅 𝙳𝙰𝚃𝙴 :\`* ${slDate}\n` +
                         `> *\`⌚ 𝚃𝙸𝙼𝙴 :\`* ${slTimeNow}\n\n` +
-                        `> *𝗔esthatic 𝗤ueen 𝗕y DESHAN  𝜗𝜚⋆*`;
+                        `> *Powered By DESHAN TECH*`;
+
+        await socket.sendMessage(sender, { image: { url: video.thumbnail }, caption: caption }, { quoted: msg });
+        await socket.sendMessage(sender, { react: { text: '⏳', key: msg.key } }).catch(()=>{});
+
+        const apiKey = 'zanta_DGLxmeRvwewS4gtVGbYsBaNV';
+        const { data } = await axios.get(`https://api.zanta-mini.store/api/ytmp3?apiKey=${apiKey}&url=${encodeURIComponent(video.url)}`);
+
+        if (!data.status ||!data.data.url) return reply("❌ *MP3 Not Found*");
 
         await socket.sendMessage(sender, {
-            image: { url: video.thumbnail },
-            caption: caption,
-            contextInfo: arabianCtx()
-        }, { quoted: msg });
-
-        const ytRes = await axios.get(`https://ytdl-new-dxz.vercel.app/api/ytmp3?url=${encodeURIComponent(video.url)}`);
-        const downloadUrl = ytRes.data.download_url || ytRes.data.result || ytRes.data.url;
-
-        if (!downloadUrl) return reply("❌ *I cant get MP3 !*");
-
-        await socket.sendMessage(sender, {
-            audio: { url: downloadUrl },
+            audio: { url: data.data.url },
             mimetype: 'audio/mpeg',
-            ptt: false
+            fileName: `${video.title}.mp3`
         }, { quoted: msg });
 
-        try { await socket.sendMessage(sender, { react: { text: '✅', key: msg.key } }); } catch (_) {}
+        await socket.sendMessage(sender, { react: { text: '✅', key: msg.key } }).catch(()=>{});
 
     } catch (e) {
-        console.log("SONG CMD ERROR:", e);
+        console.log(e);
         reply("❌ *Error: " + e.message + "*");
     }
     break;
 }
-
-
 // ════════════ VIDEO ════════════
 
 case 'video':
