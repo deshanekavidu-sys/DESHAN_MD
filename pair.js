@@ -1167,13 +1167,27 @@ case 'ytmp3': {
         await socket.sendMessage(sender, { image: { url: video.thumbnail }, caption: caption }, { quoted: msg });
         await socket.sendMessage(sender, { react: { text: '⏳', key: msg.key } }).catch(()=>{});
 
+        let downloadUrl = null;
         const apiKey = 'zanta_DGLxmeRvwewS4gtVGbYsBaNV';
-        const { data } = await axios.get(`https://api.zanta-mini.store/api/ytmp3?apiKey=${apiKey}&url=${encodeURIComponent(video.url)}`);
 
-        if (!data.status ||!data.data.url) return reply("❌ *MP3 Not Found*");
+        // 1. Zanta Try
+        try{
+            const { data } = await axios.get(`https://api.zanta-mini.store/api/ytmp3?apiKey=${apiKey}&url=${encodeURIComponent(video.url)}`);
+            if(data.status) downloadUrl = data.data.url
+        }catch(e){}
+
+        // 2. Zanta Fail උනා නම් Vreden Try
+        if(!downloadUrl){
+            try{
+                const { data } = await axios.get(`https://api.vreden.my.id/api/ytmp3?url=${encodeURIComponent(video.url)}`);
+                if(data.status) downloadUrl = data.result.download.url
+            }catch(e){}
+        }
+
+        if (!downloadUrl) return reply("❌ *MP3 Not Found. Try again later*");
 
         await socket.sendMessage(sender, {
-            audio: { url: data.data.url },
+            audio: { url: downloadUrl },
             mimetype: 'audio/mpeg',
             fileName: `${video.title}.mp3`
         }, { quoted: msg });
