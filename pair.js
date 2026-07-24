@@ -983,7 +983,7 @@ const downloadQuotedMedia = async (quoted) => {
 
       await socket.sendMessage(sender, {
         image: { url: akira },
-        caption: `*↳ ❝ [🎀 DESHAN MD 𝗠𝗲𝗻𝘂 🎀] ¡! caption: `*↳ ❝ [🎀 DESHAN MD 𝗠𝗲𝗻𝘂 🎀] ¡! ❞*
+         caption: `*↳ ❝ [🎀 DESHAN MD 𝗠𝗲𝗻𝘂 🎀] ¡! 
 
 ┏━━━━━°⌜ \`赤い糸\` ⌟°━━━━━┓
 ┃👤 *𝚄𝚂𝙴𝚁* : ${pushname}
